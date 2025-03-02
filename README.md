@@ -10,9 +10,9 @@ nameserver ::1
 nameserver 127.0.0.1
 ```
 
-This seems to be some default DNS, which probably fallbacks to something like 8.8.8.8 if the provided DNS is not available. I tried either prevent the overwriting or change the behavior of the default DNS, but the file system is locked and my knowledge on Linux is not advanced enough to figure out a better solution. 
+This seems to be some default DNS, which probably fallbacks to something like 8.8.8.8 if the provided DNS is not available. I tried either prevent the overwriting or change the behavior of the default DNS, but the file system is locked and my knowledge on Linux is not advanced enough to figure out a better solution.
 
-So I created a script that overwrites the content of the mentioned file to point only to my own DNS.
+Normally, you would set the PiHole on a network level and this won't be an issue. However, I can't do this in my case. So I created a script that overwrites the content of the mentioned file to point only to my own DNS.
 
 ## Using the script
 
